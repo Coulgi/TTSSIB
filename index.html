@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <img src="https://media3.giphy.com/media/xTiTnwj1LUAw0RAfiU/200w.gif?cid=6c09b952hxqv1fj7qcyonzubwj92ajtngviyzv811dvr3i9u&ep=v1_gifs_search&rid=200w.gif&ct=g" class="gif-burger" alt="Dancing Burger">
+                    <div class="text">
+                        <strong>Dear Strongest Soldier in Bocaue</strong>
+                        <p>
+                            You doing well!! , keep it up may the best thing happen to you, you may exp 
+                            worst thing right now but am still here for STRONGEST SOLDIER supporting her and not gonna
+                            leave her mweheheh :>>>> WOAHWOAHWAOHAOWHAO BURGEEEEER, IK YOU WANT BURGER, DO YOU WANT BURGER?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
